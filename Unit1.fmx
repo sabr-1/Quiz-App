@@ -1,0 +1,100 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Quiz'
+  ClientHeight = 480
+  ClientWidth = 883
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Question: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Question'
+    TabOrder = 0
+    object Option1: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 88.000000000000000000
+      Size.Width = 825.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Option1'
+      TextSettings.Font.Size = 20.000000000000000000
+      OnChange = Option1Change
+      object Option2: TRadioButton
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 64.000000000000000000
+        Size.Width = 825.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 20
+        Text = 'Option2'
+        TextSettings.Font.Size = 20.000000000000000000
+        OnChange = Option2Change
+      end
+    end
+    object Points: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 632.000000000000000000
+      Size.Width = 128.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      Text = 'Points:'
+      TabOrder = 5
+    end
+  end
+  object Option3: TRadioButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 825.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Option3'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnChange = Option3Change
+  end
+  object actualPoints: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 730.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'actualPoints'
+    TabOrder = 2
+  end
+  object Submit: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 337.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Submit'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = SubmitClick
+  end
+  object DevelopedBy: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 682.000000000000000000
+    Position.Y = 448.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Developed By: Sameer'
+    TabOrder = 5
+  end
+end
